@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>サポート — PonDashi Player Audio</title>
+<meta name="description" content="PonDashi Player Audio のお問い合わせ先、動作環境、よくある質問。">
+<link rel="icon" href="favicon.png">
+<link rel="alternate" hreflang="en" href="en/support.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="doc">
+<header class="top"><div class="wrap">
+  <a class="maker" href="../">ApexCue</a><span class="sep" aria-hidden="true">/</span>
+  <a class="brand" href="./"><img src="icon.png" alt="">PonDashi Player Audio</a>
+  <nav aria-label="サイト">
+    <a href="./">製品</a>
+    <a href="support.html" aria-current="page">サポート</a>
+    <a href="privacy.html">プライバシー</a>
+    <a class="lang" href="en/support.html" hreflang="en" lang="en">English</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="doc-head measure">
+    <h1>サポート</h1>
+    <p>PonDashi Player Audio（Mac 用）についてのお問い合わせ先と、よくある質問です。</p>
+  </div>
+  <article class="measure">
+    <h2 id="contact">お問い合わせ</h2>
+    <p>不具合のご報告やご質問は、メールでお送りください。</p>
+    <p><a class="contact" href="mailto:info.apexcue@gmail.com">info.apexcue@gmail.com</a></p>
+    <p>次の情報を書き添えていただくと、早く原因を調べられます。</p>
+    <ul>
+      <li>アプリのバージョン（メニュー「PonDashi Player Audio」→「PonDashi Player Audio について」）</li>
+      <li>macOS のバージョンと Mac の機種</li>
+      <li>使っている出力デバイス</li>
+      <li>起きたことと、その直前に行った操作</li>
+    </ul>
+    <p>個人で開発・運営しているため、お返事まで数日いただくことがあります。</p>
+
+    <h2 id="requirements">動作環境</h2>
+    <ul>
+      <li>macOS 13（Ventura）以降</li>
+      <li>Apple Silicon（M1 以降）搭載の Mac。Intel プロセッサの Mac では動きません。</li>
+    </ul>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>素材が鳴らない。「許可が必要」と出る</summary>
+        <div><p>App Store 版は macOS のサンドボックスの中で動くため、開く許可のないフォルダの素材は読めません。画面上の帯の「素材のフォルダを許可…」を押し、素材が入っているフォルダを選んでください。許可したあと素材を読み直します。</p>
+        <p>ドロップで追加した素材は、次に起動したときにこの許可が必要になることがあります。</p></div>
+      </details>
+      <details>
+        <summary>読める音声ファイルの形式は？</summary>
+        <div><p>WAV、AIFF、CAF、MP3、M4A（AAC）、FLAC、Ogg などです。App Store 版は Apple ロスレス（ALAC）を読めません。ALAC の素材は WAV や AIFF に書き出してからお使いください。</p></div>
+      </details>
+      <details>
+        <summary>出力デバイスを選びたい</summary>
+        <div><p>「出力設定…」で、本線と HP（モニター）の出力デバイスをそれぞれ選べます。送出が ON のときは本線へ、OFF のときは本線を消音して HP へ出します。</p></div>
+      </details>
+      <details>
+        <summary>素材の追加や編集ができない</summary>
+        <div><p>起動時は本番中のオペミスを防ぐため再生専用（CONFIG OFF）です。画面上段の CONFIG ボタンを押して ON にすると、追加・削除・並べ替え・波形の編集・EQ などができます。</p></div>
+      </details>
+      <details>
+        <summary>Bluetooth のイヤホンが外れたら？</summary>
+        <div><p>出力デバイスが外れると、自動で Mac の既定の出力に切り替えて知らせます。デバイスが戻ると、元の出力へ自動で戻ります。</p></div>
+      </details>
+      <details>
+        <summary>マイクの許可を求められた</summary>
+        <div><p>録音はしません。出力デバイスの名前をどうしても取得できないときに限り、名前を表示するためにマイクの許可を一度求めることがあります。許可しなくても再生はできます（デバイス名が表示されないことがあります）。</p></div>
+      </details>
+    </div>
+
+    <h2 id="privacy">プライバシー</h2>
+    <p>このアプリはデータを収集しません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </article>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <nav aria-label="フッター"><a href="./">製品</a><a href="privacy.html">プライバシーポリシー</a><a href="en/support.html" hreflang="en" lang="en">English</a></nav>
+  <span class="copy">© 2026 KENJI morimoto</span>
+</div></footer>
+</body>
+</html>

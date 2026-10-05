@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — PonDashi Player Audio</title>
+<meta name="description" content="Contact, requirements and frequently asked questions for PonDashi Player Audio.">
+<link rel="icon" href="../favicon.png">
+<link rel="alternate" hreflang="ja" href="../support.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body class="doc">
+<header class="top"><div class="wrap">
+  <a class="maker" href="../../en/">ApexCue</a><span class="sep" aria-hidden="true">/</span>
+  <a class="brand" href="./"><img src="../icon.png" alt="">PonDashi Player Audio</a>
+  <nav aria-label="Site">
+    <a href="./">Product</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a class="lang" href="../support.html" hreflang="ja" lang="ja">日本語</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="doc-head measure">
+    <h1>Support</h1>
+    <p>How to reach us, and answers to common questions about PonDashi Player Audio for Mac.</p>
+  </div>
+  <article class="measure">
+    <h2 id="contact">Contact</h2>
+    <p>Send bug reports and questions by email. English and Japanese are both fine.</p>
+    <p><a class="contact" href="mailto:info.apexcue@gmail.com">info.apexcue@gmail.com</a></p>
+    <p>Including the following helps us find the cause sooner:</p>
+    <ul>
+      <li>App version (app menu → About PonDashi Player Audio)</li>
+      <li>macOS version and Mac model</li>
+      <li>The output device you use</li>
+      <li>What happened, and what you did just before</li>
+    </ul>
+    <p>This app is developed by an individual, so a reply may take a few days.</p>
+
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+      <li>macOS 13 (Ventura) or later</li>
+      <li>Mac with Apple silicon (M1 or later). Does not run on Intel-based Macs.</li>
+      <li>The app’s interface is in Japanese.</li>
+    </ul>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>A cue won’t play, or says it needs permission</summary>
+        <div><p>The App Store version runs in the macOS sandbox, so it can’t read files in folders it hasn’t been given access to. Use the bar at the top of the window to grant access to the folder that holds your audio (「素材のフォルダを許可…」 — “Allow audio folder…”). The files are reloaded once access is granted.</p>
+        <p>Files added by drag and drop may need this the next time you launch the app.</p></div>
+      </details>
+      <details>
+        <summary>Which audio formats can it read?</summary>
+        <div><p>WAV, AIFF, CAF, MP3, M4A (AAC), FLAC, Ogg and more. The App Store version cannot read Apple Lossless (ALAC); export those files to WAV or AIFF first.</p></div>
+      </details>
+      <details>
+        <summary>How do I choose output devices?</summary>
+        <div><p>Open Output Settings (「出力設定…」) and choose a device for main and for HP (monitor). With on-air turned on, audio goes to main; with it off, main is muted and audio goes to HP.</p></div>
+      </details>
+      <details>
+        <summary>I can’t add or edit cues</summary>
+        <div><p>The app opens in play-only mode (CONFIG off) to prevent mistakes during a show. Press the CONFIG button at the top to turn it on; then you can add, delete and reorder cues, edit waveforms, use the EQ and more.</p></div>
+      </details>
+      <details>
+        <summary>What happens if my Bluetooth headphones disconnect?</summary>
+        <div><p>Output switches automatically to the Mac’s default output and you’re notified. When the device comes back, output returns to it automatically.</p></div>
+      </details>
+      <details>
+        <summary>Why is it asking for microphone access?</summary>
+        <div><p>It never records. Only when an output device’s name can’t be read any other way, the app may ask once for microphone access so it can show the device name. Playback works without it; device names may just not appear.</p></div>
+      </details>
+    </div>
+
+    <h2 id="privacy">Privacy</h2>
+    <p>This app collects no data. See the <a href="privacy.html">privacy policy</a> for details.</p>
+  </article>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <nav aria-label="Footer"><a href="./">Product</a><a href="privacy.html">Privacy policy</a><a href="../support.html" hreflang="ja" lang="ja">日本語</a></nav>
+  <span class="copy">© 2026 KENJI morimoto</span>
+</div></footer>
+</body>
+</html>
