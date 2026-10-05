@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PonDashi Player Audio — Instant cue playback for Mac</title>
-<meta name="description" content="A Mac app for firing audio cues in broadcast, live events and theatre. Playlist and pads, fades, timers, loudness matching and two outputs.">
+<meta name="description" content="A Mac app for firing audio cues in broadcast, live events and theatre. Playlist and pads, fades, timers, peak normalizing and two outputs.">
 <link rel="icon" href="../favicon.png">
 <link rel="alternate" hreflang="ja" href="../">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +65,7 @@
 
       <dt>Shape<span>Level and tone</span></dt>
       <dd><figure class="shot narrow"><img src="../img/eq.png" width="1168" height="1042" loading="lazy" alt="4-band EQ panel with response curve, NATURAL / PUNCH / WARM / VINTAGE, A/B, and LF, LMF, HMF, HF and OUT knobs"><figcaption>4-band EQ. Drag the points on the curve or the knobs.</figcaption></figure><figure class="shot"><img src="../img/afdr.png" width="3330" height="346" loading="lazy" alt="A.FDR shown as a yellow line over the waveform, with range ±3 to ±12 and slow / normal / fast speed"><figcaption>A.FDR shows its moves as a yellow line over the waveform, with selectable range and speed.</figcaption></figure><ul>
-        <li><h3>AGC</h3><p>Matches perceived loudness to −16 LUFS (ITU-R BS.1770), with peaks held at −1 dBFS.</p></li>
+        <li><h3>AGC</h3><p>Normalizes each cue’s peak to a level you set (dBFS).</p></li>
         <li><h3>A.FDR (auto fader)</h3><p>For narration and dialogue: smooths out level changes the way an operator rides a fader.</p></li>
         <li><h3>4-band EQ</h3><p>Four characters (NATURAL, PUNCH, WARM, VINTAGE), 2× oversampling, A/B compare, presets and output gain. VINTAGE follows a 1970s three-band discrete EQ design.</p></li>
       </ul></dd>
