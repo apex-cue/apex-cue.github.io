@@ -26,20 +26,14 @@
 <main>
 <div class="hero">
   <div class="wrap">
-    <h1>Press it.<br>It plays.</h1>
-    <p class="lead">PonDashi Player Audio is a Mac app for firing audio cues in broadcast, live events and theatre. One key and the cue goes. During the show it stays in play-only mode, so nothing gets changed by accident.</p>
+    <h1>PonDashi Player Audio</h1>
+    <p class="lead">A Mac app for firing audio cues in broadcast, live events and theatre. One key and the cue goes. During the show it stays in play-only mode, so nothing gets changed by accident.</p>
     <div class="actions">
       <span class="badge"><span>Mac App Store<small>Coming soon</small></span></span>
       <span class="req">macOS 13 or later · Apple silicon (M1 or later)</span>
     </div>
   </div>
-  <div class="deck" aria-label="Playback demo (no sound)">
-    <div class="wrap">
-      <button class="go" type="button" aria-pressed="false">GO</button>
-      <div class="wave"><svg aria-hidden="true"></svg><div class="head"></div></div>
-      <div class="deck-meta"><span data-tc>00:00:00.00</span><span>Press <kbd>Space</kbd> to play (demo, no sound)</span></div>
-    </div>
-  </div>
+  <div class="wrap"><figure class="hero-shot"><img src="../img/playlist.png" width="2000" height="1281" alt="PonDashi Player Audio playlist screen: mode, CONFIG, AUTO PLAY, clock and on-air controls at the top, the cue list in the middle and the selected cue’s waveform below"></figure></div>
 </div>
 
 <section id="features">
@@ -48,37 +42,36 @@
     <p class="sub measure">Firing, linking, preparing, shaping and routing — in the order you need them.</p>
     <dl class="flow">
       <dt>Fire<span>During the show</span></dt>
-      <dd><ul>
+      <dd><figure class="shot"><img src="../img/pads.png" width="2000" height="1281" loading="lazy" alt="Pad mode with one of 12 pads playing, showing progress in red and green"><figcaption>A playing pad shows its progress in red and green; the waveform below turns red up to the playhead. (Interface in Japanese.)</figcaption></figure><ul>
         <li><h3>Playlist</h3><p>Four pages. <kbd>Space</kbd> play/stop, <kbd>↑</kbd><kbd>↓</kbd> select, <kbd>Enter</kbd> play selected, <kbd>Esc</kbd> stop all.</p></li>
         <li><h3>Pads</h3>
-          <div class="pads" aria-hidden="true"><span>1</span><span>2</span><span class="on">3</span><span>4</span><span>Q</span><span>W</span><span>E</span><span>R</span><span>A</span><span>S</span><span>D</span><span>F</span></div>
           <p>4 pages × 12 pads. Three trigger modes: layer, restart, or one at a time with a crossfade.</p></li>
         <li><h3>CONFIG mode</h3><p>The app opens in play-only mode. Editing is possible only after pressing CONFIG, so settings don’t change mid-show.</p></li>
       </ul></dd>
 
       <dt>Link<span>Between cues</span></dt>
-      <dd><ul>
+      <dd><figure class="shot timer"><img src="../img/timer.png" width="616" height="154" loading="lazy" alt="Timer fields on two rows set to 12:03:45 and 12:03:55"><figcaption>Enter a time on a row and the cue plays exactly then.</figcaption></figure><ul>
         <li><h3>Crossfade</h3><p>Global on/off and length, with per-cue overrides.</p></li>
         <li><h3>AUTO PLAY</h3><p>When a cue ends, the next one on the page starts with no gap. Stops after the last cue.</p></li>
         <li><h3>Timer</h3><p>Start a cue at an exact time — straight in, after the previous cue fades out, or overlapping once it has dropped to a set level. Output latency (including Bluetooth) is compensated, so it lands when it’s heard.</p></li>
       </ul></dd>
 
       <dt>Prepare<span>Before the show</span></dt>
-      <dd><ul>
+      <dd><figure class="shot"><img src="../img/fade.png" width="988" height="320" loading="lazy" alt="Fades on the waveform: IN and OUT flags, with blue regions and white fade curves at the start and end"><figcaption>IN/OUT flags and fades (blue region, white curve), edited by dragging directly on the waveform.</figcaption></figure><ul>
         <li><h3>Waveform editing</h3><p>Drag to set IN/OUT, loop, zoom and follow the playhead. Edit points snap to zero crossings to avoid clicks. Edit while it plays.</p></li>
         <li><h3>Fades</h3><p>Drag on the waveform to set length and curve freely, or pick a preset: linear, equal power, S-curve and more.</p></li>
         <li><h3>Shows</h3><p>Export and import single pages. The last show opens at launch.</p></li>
       </ul></dd>
 
       <dt>Shape<span>Level and tone</span></dt>
-      <dd><ul>
+      <dd><figure class="shot narrow"><img src="../img/eq.png" width="1168" height="1042" loading="lazy" alt="4-band EQ panel with response curve, NATURAL / PUNCH / WARM / VINTAGE, A/B, and LF, LMF, HMF, HF and OUT knobs"><figcaption>4-band EQ. Drag the points on the curve or the knobs.</figcaption></figure><figure class="shot"><img src="../img/afdr.png" width="3330" height="346" loading="lazy" alt="A.FDR shown as a yellow line over the waveform, with range ±3 to ±12 and slow / normal / fast speed"><figcaption>A.FDR shows its moves as a yellow line over the waveform, with selectable range and speed.</figcaption></figure><ul>
         <li><h3>AGC</h3><p>Matches perceived loudness to −16 LUFS (ITU-R BS.1770), with peaks held at −1 dBFS.</p></li>
         <li><h3>A.FDR (auto fader)</h3><p>For narration and dialogue: smooths out level changes the way an operator rides a fader.</p></li>
         <li><h3>4-band EQ</h3><p>Four characters (NATURAL, PUNCH, WARM, VINTAGE), 2× oversampling, A/B compare, presets and output gain. VINTAGE follows a 1970s three-band discrete EQ design.</p></li>
       </ul></dd>
 
       <dt>Route<span>Outputs</span></dt>
-      <dd><ul>
+      <dd><figure class="shot narrow"><img src="../img/output.png" width="1204" height="796" loading="lazy" alt="Output settings: choose devices for main (on air) and HP monitor (off air)"><figcaption>Output settings: separate devices for main and the HP monitor.</figcaption></figure><ul>
         <li><h3>Two outputs</h3><p>Send main and HP (monitor) to different audio devices, switched with the on-air button.</p></li>
         <li><h3>Keeps playing if a device drops</h3><p>If headphones disconnect, output moves to the system default and returns automatically when the device comes back.</p></li>
       </ul></dd>
@@ -107,6 +100,5 @@
   <nav aria-label="Footer"><a href="support.html">Support &amp; contact</a><a href="privacy.html">Privacy policy</a><a href="../" hreflang="ja" lang="ja">日本語</a></nav>
   <span class="copy">© 2026 KENJI morimoto</span>
 </div></footer>
-<script src="../../deck.js"></script>
 </body>
 </html>

@@ -161,3 +161,14 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 }
 .tm{font-size:13px;color:var(--ink-2);margin:20px 0 0}
 .app em{font-style:normal;font-weight:700}
+
+/* real screenshots */
+.hero{padding-bottom:40px}
+.hero-shot{margin:8px 0 0}
+.hero-shot img{display:block;width:100%;height:auto}
+.shot{margin:0 0 28px}
+.shot img{display:block;width:100%;height:auto;border-radius:10px;background:var(--console)}
+.shot.narrow{max-width:620px}
+.shot figcaption{font-size:14px;color:var(--ink-2);margin-top:8px}
+@media (max-width:760px){.hero-shot{margin:0 -8px}}
+.shot.timer{max-width:360px}
