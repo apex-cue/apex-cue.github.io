@@ -164,11 +164,11 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 
 /* real screenshots */
 .hero{padding-bottom:40px}
-.hero-shot{margin:8px 0 0}
+.hero-shot{margin:8px auto 0;max-width:880px}
 .hero-shot img{display:block;width:100%;height:auto}
-.shot{margin:0 0 28px}
+.shot{margin:0 0 28px;max-width:560px}
 .shot img{display:block;width:100%;height:auto;border-radius:10px;background:var(--console)}
-.shot.narrow{max-width:620px}
+.shot.narrow{max-width:420px}
 .shot figcaption{font-size:14px;color:var(--ink-2);margin-top:8px}
 @media (max-width:760px){.hero-shot{margin:0 -8px}}
-.shot.timer{max-width:360px}
+.shot.timer{max-width:320px}
