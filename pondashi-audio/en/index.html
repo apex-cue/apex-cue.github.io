@@ -42,29 +42,29 @@
     <p class="sub measure">Firing, linking, preparing, shaping and routing — in the order you need them.</p>
     <dl class="flow">
       <dt>Fire<span>During the show</span></dt>
-      <dd><figure class="shot"><img src="../img/pads.png" width="2000" height="1281" loading="lazy" alt="Pad mode with one of 12 pads playing, showing progress in red and green"><figcaption>A playing pad shows its progress in red and green; the waveform below turns red up to the playhead. (Interface in Japanese.)</figcaption></figure><ul>
-        <li><h3>Playlist</h3><p>Four pages. <kbd>Space</kbd> play/stop, <kbd>↑</kbd><kbd>↓</kbd> select, <kbd>Enter</kbd> play selected, <kbd>Esc</kbd> stop all.</p></li>
+      <dd><figure class="shot"><img src="../img/pads.png" width="2000" height="1281" loading="lazy" alt="Pad mode with pad 1 playing, showing time remaining and its waveform"><figcaption>A playing pad shows time remaining and progress; the waveform below also shows A.FDR moves. (Interface in Japanese.)</figcaption></figure><ul>
+        <li><h3>Playlist</h3><p>Three pages. <kbd>Space</kbd> play/stop, <kbd>↑</kbd><kbd>↓</kbd> select, <kbd>Enter</kbd> play selected, <kbd>Esc</kbd> stop all.</p></li>
         <li><h3>Pads</h3>
-          <p>4 pages × 12 pads. Three trigger modes: layer, restart, or one at a time with a crossfade.</p></li>
+          <p>3 pages × 12 pads. Three modes: TRIGGER (only the pressed pad plays, others crossfade out), POLY (layer pads) and ONE-SHOT (always plays to the end, so a second press can’t stop it by mistake).</p></li>
         <li><h3>CONFIG mode</h3><p>The app opens in play-only mode. Editing is possible only after pressing CONFIG, so settings don’t change mid-show.</p></li>
       </ul></dd>
 
       <dt>Link<span>Between cues</span></dt>
-      <dd><figure class="shot timer"><img src="../img/timer.png" width="616" height="154" loading="lazy" alt="Timer fields on two rows set to 12:03:45 and 12:03:55"><figcaption>Enter a time on a row and the cue plays exactly then.</figcaption></figure><ul>
+      <dd><figure class="shot narrow"><img src="../img/timer.png" width="688" height="572" loading="lazy" alt="Timer start options: GO, GO after fade-out, or overlap when the previous cue has dropped to a set percentage, plus the fade-down time"><figcaption>How a timed cue comes in, including how the previous cue is faded down.</figcaption></figure><ul>
         <li><h3>Crossfade</h3><p>Global on/off and length, with per-cue overrides.</p></li>
         <li><h3>AUTO PLAY</h3><p>When a cue ends, the next one on the page starts with no gap. Stops after the last cue.</p></li>
         <li><h3>Timer</h3><p>Start a cue at an exact time — straight in, after the previous cue fades out, or overlapping once it has dropped to a set level. Output latency (including Bluetooth) is compensated, so it lands when it’s heard.</p></li>
       </ul></dd>
 
       <dt>Prepare<span>Before the show</span></dt>
-      <dd><figure class="shot"><img src="../img/fade.png" width="988" height="320" loading="lazy" alt="Fades on the waveform: IN and OUT flags, with blue regions and white fade curves at the start and end"><figcaption>IN/OUT flags and fades (blue region, white curve), edited by dragging directly on the waveform.</figcaption></figure><ul>
+      <dd><figure class="shot"><img src="../img/fade.png" width="1178" height="292" loading="lazy" alt="Fades on the waveform: IN and OUT flags with fade lines at the start and end"><figcaption>IN/OUT flags and fade lines, edited by dragging directly on the waveform.</figcaption></figure><ul>
         <li><h3>Waveform editing</h3><p>Drag to set IN/OUT, loop, zoom and follow the playhead. Edit points snap to zero crossings to avoid clicks. Edit while it plays.</p></li>
         <li><h3>Fades</h3><p>Drag on the waveform to set length and curve freely, or pick a preset: linear, equal power, S-curve and more.</p></li>
         <li><h3>Shows</h3><p>Export and import single pages. The last show opens at launch.</p></li>
       </ul></dd>
 
       <dt>Shape<span>Level and tone</span></dt>
-      <dd><figure class="shot narrow"><img src="../img/eq.png" width="1168" height="1042" loading="lazy" alt="4-band EQ panel with response curve, NATURAL / PUNCH / WARM / VINTAGE, A/B, and LF, LMF, HMF, HF and OUT knobs"><figcaption>4-band EQ. Drag the points on the curve or the knobs.</figcaption></figure><figure class="shot"><img src="../img/afdr.png" width="3330" height="346" loading="lazy" alt="A.FDR shown as a yellow line over the waveform, with range ±3 to ±12 and slow / normal / fast speed"><figcaption>A.FDR shows its moves as a yellow line over the waveform, with selectable range and speed.</figcaption></figure><ul>
+      <dd><figure class="shot"><img src="../img/eq.png" width="2000" height="1281" loading="lazy" alt="EQ panel open: response curve over a spectrum, NATURAL / PUNCH / WARM / VINTAGE, A/B, and LF, LMF, HMF, HF and OUT knobs"><figcaption>4-band EQ over a live spectrum. Drag the points on the curve or the knobs.</figcaption></figure><figure class="shot"><img src="../img/afdr.png" width="2186" height="368" loading="lazy" alt="A.FDR shown as a yellow line over the waveform, with range ±3 to ±12 and slow / normal / fast speed"><figcaption>A.FDR shows its moves as a yellow line over the waveform, with selectable range and speed.</figcaption></figure><ul>
         <li><h3>AGC</h3><p>Normalizes each cue’s peak to a level you set (dBFS).</p></li>
         <li><h3>A.FDR (auto fader)</h3><p>For narration and dialogue: smooths out level changes the way an operator rides a fader.</p></li>
         <li><h3>4-band EQ</h3><p>Four characters (NATURAL, PUNCH, WARM, VINTAGE), 2× oversampling, A/B compare, presets and output gain. VINTAGE follows a 1970s three-band discrete EQ design.</p></li>

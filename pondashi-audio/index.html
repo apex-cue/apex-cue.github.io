@@ -33,7 +33,7 @@
       <span class="req">macOS 13 以降・Apple Silicon（M1 以降）</span>
     </div>
   </div>
-  <div class="wrap"><figure class="hero-shot"><img src="img/playlist.png" width="2000" height="1281" alt="PonDashi Player Audio のプレイリスト画面。上段にモード切替・CONFIG・AUTO PLAY・現在時刻・送出、中央に素材の一覧、下に選んだ素材の波形"></figure></div>
+  <div class="wrap"><figure class="hero-shot"><img src="img/playlist.png" width="2000" height="1281" alt="PonDashi Player Audio のプレイリスト画面。上段にモード切替・CONFIG・AUTO PLAY・現在時刻・送出、中央に素材の一覧、下に選んだ素材の波形とフェード"></figure></div>
 </div>
 
 <section id="features">
@@ -42,29 +42,29 @@
     <p class="sub measure">仕込み、本番、つなぎ、音づくり、出力。現場で必要になる順に並べました。</p>
     <dl class="flow">
       <dt>鳴らす<span>本番中</span></dt>
-      <dd><figure class="shot"><img src="img/pads.png" width="2000" height="1281" loading="lazy" alt="パッドモード。12 個のパッドのうち 1 つが再生中で、赤と緑で進み具合を表示"><figcaption>パッドは再生中に赤→緑で残り時間を表示。下の波形も鳴っている所まで赤くなります。</figcaption></figure><ul>
-        <li><h3>プレイリスト</h3><p>4 ページ。<kbd>Space</kbd> 再生／停止、<kbd>↑</kbd><kbd>↓</kbd> 選択、<kbd>Enter</kbd> 選択した曲を再生、<kbd>Esc</kbd> 全停止。</p></li>
+      <dd><figure class="shot"><img src="img/pads.png" width="2000" height="1281" loading="lazy" alt="パッドモード。1 番のパッドが再生中で、残り時間と波形を表示"><figcaption>再生中のパッドは残り時間と進み具合を表示。下の波形には A.FDR の動きも出ます。</figcaption></figure><ul>
+        <li><h3>プレイリスト</h3><p>3 ページ。<kbd>Space</kbd> 再生／停止、<kbd>↑</kbd><kbd>↓</kbd> 選択、<kbd>Enter</kbd> 選択した曲を再生、<kbd>Esc</kbd> 全停止。</p></li>
         <li><h3>パッド</h3>
-          <p>4 ページ × 12 パッド。鳴り方は「重ねる」「頭から」「1 つだけ＋クロスフェード」の 3 種。</p></li>
+          <p>3 ページ × 12 パッド。鳴り方は 3 種：TRIGGER（押したパッドだけ鳴らし、他はクロスフェード）、POLY（重ねて鳴らす）、ONE-SHOT（最後まで鳴らし切り、誤操作で止まらない）。</p></li>
         <li><h3>CONFIG モード</h3><p>起動時は再生専用。編集は CONFIG ボタンを押したときだけなので、本番中にうっかり設定が変わりません。</p></li>
       </ul></dd>
 
       <dt>つなぐ<span>曲と曲のあいだ</span></dt>
-      <dd><figure class="shot timer"><img src="img/timer.png" width="616" height="154" loading="lazy" alt="行ごとのタイマー欄に再生する時刻 12:03:45 と 12:03:55"><figcaption>行ごとに再生する時刻を入れておくと、その時刻ちょうどに鳴ります。</figcaption></figure><ul>
+      <dd><figure class="shot narrow"><img src="img/timer.png" width="688" height="572" loading="lazy" alt="時刻になったときの入り方の設定。GO・落ち切りで GO・被せ（前の曲が何 % まで下がった所か）と、前の曲を下げる時間"><figcaption>時刻になったときの入り方。前の曲の下げ方まで決めておけます。</figcaption></figure><ul>
         <li><h3>クロスフェード</h3><p>全体の ON/OFF と秒数。曲ごとに上書きもできます。</p></li>
         <li><h3>AUTO PLAY</h3><p>曲が終わると、同じページの次の曲を隙間なく続けて再生。最後の曲で止まります。</p></li>
         <li><h3>タイマー</h3><p>時刻ちょうどに再生。「前の曲を下げ切ってから」「前の曲が ○% まで下がった所で被せる」も指定できます。出力の遅れ（Bluetooth を含む）を差し引き、聞こえる時刻で合わせます。</p></li>
       </ul></dd>
 
       <dt>仕込む<span>本番前</span></dt>
-      <dd><figure class="shot"><img src="img/fade.png" width="988" height="320" loading="lazy" alt="波形の上のフェード表示。IN と OUT の旗、頭とお尻に青い範囲と白いフェードカーブ"><figcaption>IN/OUT の旗と、頭・お尻のフェード（青い範囲と白いカーブ）。波形の上で直接ドラッグして変えます。</figcaption></figure><ul>
+      <dd><figure class="shot"><img src="img/fade.png" width="1178" height="292" loading="lazy" alt="波形の上のフェード表示。IN と OUT の旗と、頭とお尻のフェードの線"><figcaption>IN/OUT の旗と、頭・お尻のフェードの線。波形の上で直接ドラッグして変えます。</figcaption></figure><ul>
         <li><h3>波形編集</h3><p>ドラッグで IN/OUT、ループ、拡大、再生位置を追いかけるスクロール。IN/OUT はゼロクロスに自動で吸着し、プツ音を防ぎます。鳴らしながら編集できます。</p></li>
         <li><h3>フェード</h3><p>波形の上でドラッグして長さと形を自由に。リニア、イコールパワー、S カーブなどのプリセットも。</p></li>
         <li><h3>ショーの保存</h3><p>ページ単位の書き出し・読み込み。前回のショーを起動時に開きます。</p></li>
       </ul></dd>
 
       <dt>ととのえる<span>音量と音色</span></dt>
-      <dd><figure class="shot narrow"><img src="img/eq.png" width="1168" height="1042" loading="lazy" alt="4 バンド EQ のパネル。周波数特性のカーブ、NATURAL・PUNCH・WARM・VINTAGE の切替、A/B、LF・LMF・HMF・HF・OUT のツマミ"><figcaption>4 バンド EQ。カーブの点もツマミもドラッグで動かせます。</figcaption></figure><figure class="shot"><img src="img/afdr.png" width="3330" height="346" loading="lazy" alt="波形の上に A.FDR の黄色い線。幅 ±3〜±12 と速さ 遅い・普通・速い の切替"><figcaption>A.FDR は波形の上の黄色い線で動きを表示。幅と速さを選べます。</figcaption></figure><ul>
+      <dd><figure class="shot"><img src="img/eq.png" width="2000" height="1281" loading="lazy" alt="EQ パネルを開いた画面。周波数特性のカーブと音のスペクトル、NATURAL・PUNCH・WARM・VINTAGE の切替、A/B、LF・LMF・HMF・HF・OUT のツマミ"><figcaption>4 バンド EQ。音のスペクトルを見ながら、カーブの点やツマミをドラッグで動かせます。</figcaption></figure><figure class="shot"><img src="img/afdr.png" width="2186" height="368" loading="lazy" alt="波形の上に A.FDR の黄色い線。幅 ±3〜±12 と速さ 遅い・普通・速い の切替"><figcaption>A.FDR は波形の上の黄色い線で動きを表示。幅と速さを選べます。</figcaption></figure><ul>
         <li><h3>AGC</h3><p>素材のピークを、自分で決めた値（dBFS）にそろえます。</p></li>
         <li><h3>A.FDR（オートフェーダー）</h3><p>ナレーションやセリフ向け。人がフェーダーを操作するように、音量の波をならします。</p></li>
         <li><h3>4 バンド EQ</h3><p>音のキャラクター 4 種（NATURAL／PUNCH／WARM／VINTAGE）。2 倍オーバーサンプリング、A/B 比較、プリセット、EQ 後のゲイン。VINTAGE は 70 年代の 3 バンド・ディスクリート EQ の型です。</p></li>
