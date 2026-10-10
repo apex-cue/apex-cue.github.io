@@ -184,3 +184,4 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 .notes li{margin:4px 0}
 .notes strong{color:var(--ink)}
 @media (max-width:760px){.notes{padding:18px 16px}}
+.notes.measure{max-width:none}
