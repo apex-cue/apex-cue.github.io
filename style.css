@@ -172,3 +172,15 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 .shot figcaption{font-size:14px;color:var(--ink-2);margin-top:8px}
 @media (max-width:760px){.hero-shot{margin:0 -8px}}
 .shot.timer{max-width:320px}
+
+.tk-h2{font-size:22px;margin:48px 0 14px}
+
+/* cautions under requirements */
+.notes{margin-top:36px;padding:24px 28px;background:var(--sheet);border-left:4px solid var(--cue);border-radius:4px}
+.notes h3{font-size:20px;margin:0 0 8px}
+.notes h4{font-size:16px;margin:20px 0 4px}
+.notes p,.notes li{font-size:15px;color:var(--ink-2)}
+.notes ul{padding-left:1.2em;margin:6px 0}
+.notes li{margin:4px 0}
+.notes strong{color:var(--ink)}
+@media (max-width:760px){.notes{padding:18px 16px}}
