@@ -9,7 +9,7 @@
 <link rel="alternate" hreflang="en" href="en/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=10">
+<link rel="stylesheet" href="../style.css?v=11">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -17,6 +17,7 @@
   <a class="brand" href="./"><img src="icon.png" alt="">PonDashi Player Audio</a>
   <nav aria-label="サイト">
     <a href="./" aria-current="page">製品</a>
+    <a href="download.html">ダウンロード</a>
     <a href="support.html">サポート</a>
     <a href="privacy.html">プライバシー</a>
     <a class="lang" href="en/" hreflang="en" lang="en">English</a>
@@ -44,9 +45,9 @@
     <dl class="flow">
       <dt>鳴らす<span>本番中</span></dt>
       <dd><figure class="shot"><img src="img/pads.png" width="2000" height="1281" loading="lazy" alt="パッドモード。1 番のパッドが再生中で、残り時間と波形を表示"><figcaption>再生中のパッドは残り時間と進み具合を表示。下の波形には A.FDR の動きも出ます。</figcaption></figure><ul>
-        <li><h3>プレイリスト</h3><p>3 ページ。<kbd>Space</kbd> 再生／停止、<kbd>↑</kbd><kbd>↓</kbd> 選択、<kbd>Enter</kbd> 選択した曲を再生、<kbd>Esc</kbd> 全停止。</p></li>
+        <li><h3>プレイリスト</h3><p>3 ページ。<kbd>Space</kbd> 再生／停止（止めるときはフェードアウトし、次の曲を選んでおく）、<kbd>↑</kbd><kbd>↓</kbd> 選択、<kbd>Enter</kbd> 選択した曲を再生、<kbd>Esc</kbd> 全停止。</p></li>
         <li><h3>パッド</h3>
-          <p>3 ページ × 12 パッド。鳴り方は 3 種：TRIGGER（押したパッドだけ鳴らし、他はクロスフェード）、POLY（重ねて鳴らす）、ONE-SHOT（最後まで鳴らし切り、誤操作で止まらない）。</p></li>
+          <p>3 ページ × 12 パッド。鳴り方は TRIGGER（押したパッドだけ鳴らし、他はクロスフェード）、POLY（重ねて鳴らす）、ONE-SHOT（最後まで鳴らし切り、誤操作で止まらない）。MANUAL にすると、パッドごとに鳴り方を選べます。パッドを鳴らすショートカットは、テンキーなど好きなキーに変えられます。パッドを右クリックして、プレイリストへコピーできます。</p></li>
         <li><h3>CONFIG モード</h3><p>起動時は再生専用。編集は CONFIG ボタンを押したときだけなので、本番中にうっかり設定が変わりません。</p></li>
       </ul></dd>
 
@@ -84,7 +85,7 @@
     <h2>購入方法</h2>
     <p>公式サイトで購入できます。1 ライセンス（Mac 1 台）1,000 円（税込）。購入画面で台数（1〜5 台）を選べます。支払い後、ライセンスキーがすぐに表示されます。</p>
     <p><a class="contact" href="https://buy.stripe.com/9B63cwgDk6ZC0tCbijbAs00">公式サイトで購入</a></p>
-    <p><a href="https://github.com/apex-cue/pondashi-audio-releases/releases/latest/download/PonDashi-Player-Audio.dmg">アプリをダウンロード（DMG・約 130 MB）</a>　macOS 13 以降・Apple Silicon。起動後にライセンスキーを入力します。</p>
+    <p><a href="https://github.com/apex-cue/pondashi-audio-releases/releases/latest/download/PonDashi-Player-Audio.dmg">アプリをダウンロード（1.0.1・DMG・約 135 MB）</a>　macOS 13 以降・Apple Silicon。起動後にライセンスキーを入力します。過去のバージョンは<a href="download.html">ダウンロード</a>のページにあります。</p>
     <p><a href="../tokushoho.html">特定商取引法に基づく表記</a>　<a href="privacy.html">プライバシーポリシー</a></p>
   </div></div>
 </section>
@@ -100,7 +101,7 @@
       <tr><th scope="row">読める音声ファイル</th><td>WAV、AIFF、CAF、MP3、M4A（AAC）、FLAC、Ogg など。App Store 版は Apple ロスレス（ALAC）を読めません。</td></tr>
       <tr><th scope="row">出力</th><td>Mac で使えるオーディオデバイス（48 kHz、チャンネル 1-2）。本線と HP の 2 系統。</td></tr>
       <tr><th scope="row">データの収集</th><td>しません（公式サイト版は、ライセンスの登録・解除のときだけ台数管理のための情報を送ります）。<a href="privacy.html">プライバシーポリシー</a></td></tr>
-      <tr><th scope="row">バージョン</th><td>1.0.0</td></tr>
+      <tr><th scope="row">バージョン</th><td>1.0.1</td></tr>
     </table>
     <div class="notes measure">
       <h3>ご使用前の注意</h3>
