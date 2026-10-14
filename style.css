@@ -185,3 +185,15 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 .notes strong{color:var(--ink)}
 @media (max-width:760px){.notes{padding:18px 16px}}
 .notes.measure{max-width:none}
+
+/* news */
+.news{list-style:none;margin:0;padding:0;border-top:3px solid var(--ink)}
+.news li{display:grid;grid-template-columns:8.5em 1fr;gap:4px 24px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.news time{font-family:var(--mono);font-size:14px;color:var(--ink-2);padding-top:2px}
+.news p{margin:0}
+@media (max-width:760px){.news li{grid-template-columns:1fr}}
+.news li > div p{margin:0}
+.news-shots{display:flex;gap:10px;align-items:flex-start;margin-top:12px;flex-wrap:wrap}
+.news-shots img{height:180px;width:auto;border-radius:6px;background:var(--console)}
+@media (max-width:760px){.news-shots img{height:120px}}
+.news-note{font-size:13px;color:var(--ink-2);margin-top:8px!important}
