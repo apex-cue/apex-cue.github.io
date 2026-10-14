@@ -130,14 +130,15 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
 /* maker (ApexCue) link in app headers */
-.maker{text-decoration:none;font-weight:900;letter-spacing:.02em;color:#fff}
-.maker:hover{color:var(--cue)}
+.maker{text-decoration:none;display:inline-flex;align-items:center}
+.maker img{display:block;height:26px;width:auto}
+.maker:hover{opacity:.8}
 .sep{color:#5C6169;margin:0 -6px}
 
 /* hub (ApexCue top) */
 .hub-hero{background:var(--console);color:#F2F3F5;padding:72px 0 64px}
-.wordmark{font-size:clamp(56px,11vw,128px);line-height:1;font-weight:900;letter-spacing:-.03em;margin:0 0 24px;display:flex;align-items:flex-start;gap:.08em}
-.wordmark svg{width:.42em;height:.42em;flex:none;margin-top:.08em}
+.wordmark{margin:0 0 28px;line-height:0}
+.wordmark img{display:block;height:clamp(56px,10vw,104px);width:auto;max-width:100%}
 .hub-hero .lead{font-size:clamp(17px,2.2vw,20px);color:#C3C7CD;margin:0;max-width:30em}
 .apps{list-style:none;margin:0;padding:0}
 .app{display:grid;grid-template-columns:112px 1fr auto;gap:8px 32px;align-items:center;padding:32px 0;border-top:1px solid var(--rule)}
