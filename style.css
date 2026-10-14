@@ -109,7 +109,7 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 /* footer */
 .foot{background:var(--console);color:#A9AEB5;font-size:14px;padding:32px 0}
 .foot .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}
-.foot nav{display:flex;gap:18px;flex-wrap:wrap}
+.foot nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
 .foot a{color:#D8DBDF}
 .foot .copy{margin-left:auto}
 
@@ -139,6 +139,11 @@ h3{font-size:19px;line-height:1.45;margin:0 0 6px;font-weight:700}
 .hub-hero{background:var(--console);color:#F2F3F5;padding:72px 0 64px}
 .wordmark{margin:0 0 28px;line-height:0}
 .wordmark img{display:block;height:clamp(56px,10vw,104px);width:auto;max-width:100%}
+a.ig{display:inline-flex;align-items:center;gap:16px}
+a.ig img{display:block;flex:none}
+.hub-sns{margin:20px 0 0;font-size:15px}
+.hub-sns a{color:#F2F3F5;text-decoration:underline;text-underline-offset:3px}
+.hub-sns a:hover{color:var(--cue)}
 .hub-hero .lead{font-size:clamp(17px,2.2vw,20px);color:#C3C7CD;margin:0;max-width:30em}
 .apps{list-style:none;margin:0;padding:0}
 .app{display:grid;grid-template-columns:112px 1fr auto;gap:8px 32px;align-items:center;padding:32px 0;border-top:1px solid var(--rule)}
