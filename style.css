@@ -144,7 +144,7 @@ a.ig img{display:block;flex:none}
 .hub-sns{margin:20px 0 0;font-size:15px}
 .hub-sns a{color:#F2F3F5;text-decoration:underline;text-underline-offset:3px}
 .hub-sns a:hover{color:var(--cue)}
-.hub-hero .lead{font-size:clamp(17px,2.2vw,20px);color:#C3C7CD;margin:0;max-width:30em}
+.hub-hero .lead{font-size:clamp(17px,2.2vw,20px);color:#C3C7CD;margin:0;max-width:36em}
 .apps{list-style:none;margin:0;padding:0}
 .app{display:grid;grid-template-columns:112px 1fr auto;gap:8px 32px;align-items:center;padding:32px 0;border-top:1px solid var(--rule)}
 .app:first-child{border-top:3px solid var(--ink)}
@@ -226,3 +226,14 @@ a.ig img{display:block;flex:none}
   .dl tr{border-bottom:1px solid var(--rule)}
   .dl td:last-child{padding-bottom:16px}
 }
+
+/* PRO page */
+.shot.meter{max-width:200px}
+.shot-pair{display:flex;gap:16px;align-items:flex-start;max-width:560px;margin:0 0 28px}
+.shot-pair .shot{margin:0;flex:1 1 0}
+.shot-pair .shot:first-child{flex:0.62 1 0}
+.cmp{min-width:560px}
+.cmp tbody th{font-family:var(--jp);font-size:15px;white-space:normal}
+.cmp td:nth-child(2){white-space:normal;color:var(--ink-2)}
+#price .spec{max-width:720px;margin-bottom:16px}
+#price .measure p{margin:6px 0}

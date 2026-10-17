@@ -3,13 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PonDashi Player Audio PRO — LTC 対応のポン出しアプリ</title>
-<meta name="description" content="PonDashi Player Audio に LTC（タイムコード）の入力・出力を加えた Mac 用の上位版（配信準備中）。">
+<link rel="canonical" href="https://apex-cue.github.io/pondashi-audio-pro/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ApexCue">
+<meta property="og:title" content="PonDashi Player Audio PRO — プロの現場向けポン出しソフト">
+<meta property="og:description" content="PonDashi Player Audio の上位版（Mac 用・配信準備中）。Core Audio ネイティブ対応、出力バスのルーティング、リモコンアプリでの操作、LTC の入力・出力（オプション・別売）。">
+<meta property="og:url" content="https://apex-cue.github.io/pondashi-audio-pro/">
+<meta property="og:image" content="https://apex-cue.github.io/og.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<title>PonDashi Player Audio PRO — プロの現場向けポン出しソフト</title>
+<meta name="description" content="PonDashi Player Audio の上位版（Mac 用・配信準備中）。Core Audio ネイティブ対応、出力バスのルーティング、リモコンアプリでの操作、LTC の入力・出力（オプション・別売）。">
 <link rel="icon" href="icon.png">
 <link rel="alternate" hreflang="en" href="en/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=11">
+<link rel="stylesheet" href="../style.css?v=13">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -24,13 +33,14 @@
 <div class="hero">
   <div class="wrap">
     <h1>PonDashi Player Audio PRO</h1>
-    <p class="lead">PonDashi Player Audio に、LTC（タイムコード）の入力と出力を加えた上位版です。外から来るタイムコードに合わせて音を出したり、タイムコードを送り出して他の機器を動かしたりできます。</p>
+    <p class="lead">現場のテスターと作り込んだ、プロ仕様の「ポン出し」ソフトウェア。Core Audio にネイティブ対応し、内部の音声処理まで突き詰めて高音質を実現。OUT バスのルーティング、iPhone・iPad の専用リモコンアプリからの操作にも対応しました。LTC の入力・出力は、オプション（別売）で追加できます。<br>現場で出た「これが欲しい」を、ひとつずつ形にしています。</p>
     <div class="actions">
-      <span class="badge"><span>配信準備中</span></span>
-      <span class="req">Mac</span>
+      <span class="badge"><span>発売準備中</span></span>
+      <span class="badge"><span>PRO 本体<small>1 台 2,000 円（税込）</small></span></span>
+      <span class="req">macOS 13 以降・Apple Silicon</span>
     </div>
   </div>
-  <div class="wrap"><figure class="hero-shot"><img src="img/playlist.png" width="2000" height="1297" alt="PonDashi Player Audio PRO のプレイリスト画面。上段にタイムコードの表示と LTC の状態、各行のタイマー欄にタイムコード"></figure></div>
+  <div class="wrap"><figure class="hero-shot"><img src="img/playlist.png" width="2000" height="1206" alt="PonDashi Player Audio PRO のプレイリスト画面。上段にタイムコードのパネル、右に曲フェーダーとマスターのメーター（PEAK・TP）"></figure></div>
 </div>
 
 <section id="features">
@@ -38,22 +48,74 @@
     <h2>PRO で加わる機能</h2>
     <p class="sub measure"><a href="../pondashi-audio/">PonDashi Player Audio</a> の機能はすべてそのまま使えます。</p>
     <dl class="flow">
-      <dt>受ける<span>LTC 入力</span></dt>
-      <dd><figure class="shot narrow"><img src="img/ltc.png" width="828" height="258" loading="lazy" alt="タイムコードのパネル。フレームレート 29.97ND・29.97DF・30 の切替、LTC LOCK の表示、タイムコード、LTC GEN（出力チャンネル）と LTC RCV（入力チャンネル）"><figcaption>タイムコードのパネル。フレームレートの切替、ロック状態、入出力のチャンネルを一目で確認できます。</figcaption></figure><ul>
-        <li><h3>LTC を受けて再生</h3><p>オーディオインターフェイスの入力から LTC を受け取り、タイマー欄に入れたタイムコードちょうどに音を出します。</p></li>
-        <li><h3>フレームレート</h3><p>29.97 DF・29.97 NDF・30 などを切り替えられます。</p></li>
+      <dt>出す<span>OUT バス</span></dt>
+      <dd><figure class="shot"><img src="img/routing.png" width="1932" height="828" loading="lazy" alt="出力ルーティングの画面。本線は ch 1-2、HP モニターは ch 3-4 に L・R を割り当て"><figcaption>本線と HP モニターそれぞれ、ch のマスをクリックして L・R を割り当てます。</figcaption></figure><ul>
+        <li><h3>OUT バスを自由にアサイン</h3><p>Core Audio にじかにつながるネイティブのエンジンで、本線と HP モニターそれぞれ、オーディオインターフェイスの ch に L・R を自由に割り当てられます。同じ音を複数の ch へ出すことも、LTC を別の ch から出すこともできます。割り当ては機器ごとに覚えます。</p></li>
       </ul></dd>
-      <dt>送る<span>LTC 出力</span></dt>
+      <dt>出す<span>機器の占有・バッファ</span></dt>
+      <dd><figure class="shot narrow"><img src="img/output.png" width="1088" height="1538" loading="lazy" alt="出力設定（Core Audio）の画面。本線・HP モニターの機器、機器の占有、バッファ、ルーティング、LTC の設定"><figcaption>出力設定（Core Audio）。機器、占有、バッファ、ルーティングをここで決めます。</figcaption></figure><ul>
+        <li><h3>機器の占有・バッファ</h3><p>機器の占有を ON にすると、オーディオインターフェイスをこのアプリだけで使い、ほかのアプリの音が混ざりません。バッファは 64〜1024 サンプルから、遅れの少なさと音切れへの強さで選べます。</p></li>
+      </ul></dd>
+      <dt>鳴らす<span>エンジン</span></dt>
       <dd><ul>
-        <li><h3>LTC を生成</h3><p>指定した出力チャンネルからタイムコードを送り出し、照明・映像などの機器を同期させます。</p></li>
+        <li><h3>サンプル単位のエンジン</h3><p>音の処理を、すべてネイティブで作り直しました。鳴らし始めをサンプル単位にそろえるので、タイマーやクロスフェードで鳴らしたときも、素材のサンプルがそのまま出ます。</p></li>
+      </ul></dd>
+      <dt>合わせる<span>サンプルレート</span></dt>
+      <dd><ul>
+        <li><h3>サンプルレート SYNC</h3><p>処理のサンプルレートは、本線の機器に合わせます（44.1／48／96 kHz など）。レートの違う素材は、Core Audio の変換器の最高品質で変換し、曲名の横に SRC の印が付きます。</p></li>
+      </ul></dd>
+      <dt>見る<span>メーター</span></dt>
+      <dd><figure class="shot meter"><img src="img/meter.png" width="415" height="1050" loading="lazy" alt="曲フェーダーとマスターのメーター。下に PEAK と TP の数値"><figcaption>PEAK と TP を並べて表示。</figcaption></figure><ul>
+        <li><h3>トゥルーピーク</h3><p>PEAK に加えて、サンプルとサンプルの間のピーク（TP）まで表示。0 dBTP を超えるとオレンジ、本当に割れると赤の印が残ります。</p></li>
+      </ul></dd>
+      <dt>ととのえる<span>EQ</span></dt>
+      <dd><ul>
+        <li><h3>EQ を切ると完全に素通し</h3><p>EQ の IN を外すと EQ を通らず、ビットが変わらないまま出ます。</p></li>
+      </ul></dd>
+      <dt>受ける・送る<span>LTC（オプション 1,000 円・税込）</span></dt>
+      <dd><figure class="shot narrow"><img src="img/ltc.png" width="886" height="234" loading="lazy" alt="タイムコードのパネル。29.97ND・29.97DF・30 NDF の切替、LTC LOCK、タイムコード、LTC GEN と LTC RCV"><figcaption>タイムコードのパネル。レート、ロック、GEN・RCV の状態を一目で確認できます。</figcaption></figure><ul>
+        <li><h3>LTC GEN・LTC RCV</h3><p>LTC GEN は鳴っている曲の TC を出し、プリロールで相手の機器が追いつく時間を作れます。LTC RCV は受けた TC で曲を鳴らし、鳴り始めた曲は LTC が途切れても最後まで自走します。レートは 29.97 ND／DF・30 NDF。</p></li>
       </ul></dd>
       <dt>操作する<span>リモコン</span></dt>
-      <dd><ul>
-        <li><h3>iPhone・iPad から操作できます</h3><p>無料のリモコンアプリ「<a href="../pondashi-remote/">PonDashi Remote</a>」で、パッド、プレイリストの GO、全部止める、曲の音量を手元で操作できます（App Store で公開予定）。</p></li>
+      <dd><div class="shot-pair"><figure class="shot"><img src="img/remote-iphone.png" width="1320" height="2868" loading="lazy" alt="iPhone の PonDashi Remote。プレイリストと GO、曲フェーダー"></figure><figure class="shot"><img src="img/remote-ipad.png" width="1640" height="2360" loading="lazy" alt="iPad の PonDashi Remote。P1 のパッド 12 個と曲フェーダー"></figure></div><ul>
+        <li><h3>PonDashi Remote</h3><p>無償の <a href="../pondashi-remote/">PonDashi Remote</a>（iPhone・iPad）で、パッド、プレイリストの GO、曲フェーダーを手元で操作。ブラウザからも使えます。</p></li>
       </ul></dd>
-      <dt>鳴らす<span>パッド</span></dt>
-      <dd><figure class="shot"><img src="img/pads.png" width="2000" height="1297" loading="lazy" alt="パッドモードの画面。タイムコードを表示したまま、12 個のパッドで効果音を鳴らす"><figcaption>パッドで鳴らしている間も、タイムコードの表示はそのまま見られます。</figcaption></figure></dd>
     </dl>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <h2>ノーマル版との違い</h2>
+    <div class="dl-wrap">
+    <table class="dl cmp">
+      <thead><tr><th scope="col">違い</th><th scope="col">PonDashi Player Audio</th><th scope="col">PRO</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">音のエンジン</th><td>Web Audio</td><td>Core Audio にじかにつながるネイティブのエンジン（音質の向上）</td></tr>
+        <tr><th scope="row">OUT バス</th><td>―</td><td>オーディオインターフェイスの仕様に沿って自由にアサイン</td></tr>
+        <tr><th scope="row">機器の占有</th><td>なし</td><td>ほかのアプリの音を混ぜずに、オーディオインターフェイスを占有できる</td></tr>
+        <tr><th scope="row">メーター</th><td>ピーク</td><td>ピーク＋トゥルーピーク（サンプルの間のピークも見える）</td></tr>
+        <tr><th scope="row">EQ を切ったとき</th><td>EQ を通る</td><td>完全に素通し（ビットが変わらない）</td></tr>
+        <tr><th scope="row">リモコン</th><td>ブラウザ（パッドだけ）</td><td>iPhone・iPad のアプリ（パッド＋プレイリストの GO）、無償。ブラウザでも使える</td></tr>
+        <tr><th scope="row">タイムコード</th><td>なし</td><td>LTC の入出力（オプション 1,000 円・税込）</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <h2>値段</h2>
+    <table class="spec">
+      <tr><th scope="row">PRO 本体</th><td>1 台 2,000 円（税込）</td></tr>
+      <tr><th scope="row">LTC オプション</th><td>1 台 1,000 円（税込）。PRO 本体に追加</td></tr>
+      <tr><th scope="row">ノーマル版からのアップグレード</th><td>1 台 1,000 円（税込）</td></tr>
+    </table>
+    <div class="measure">
+      <p>アップグレードの対象は、直販版（ライセンスキー PDA-… をお持ちの方）です。App Store 版は対象外です。</p>
+      <p>発売時には、LTC を含むすべての機能を 14 日間試せる体験版を用意します。</p>
+    </div>
   </div>
 </section>
 </main>
