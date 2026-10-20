@@ -302,3 +302,17 @@ html{scroll-behavior:smooth}
 .phero.live .phero-shot{right:2%;width:46%;transform:translateY(-50%);-webkit-mask-image:none;mask-image:none}
 .phero.live .phero-shot img{border-radius:0;filter:none;box-shadow:0 24px 70px rgba(0,0,0,.55)}
 @media (max-width:760px){.phero.live{background-position:62% center}.phero.live::before{background:linear-gradient(180deg,rgba(8,8,9,.88) 0%,rgba(8,8,9,.7) 55%,rgba(8,8,9,.35) 100%)}.phero.live .phero-shot{right:auto;width:auto;margin:16px 24px 40px;transform:none}}
+
+/* PonDashi Remote hero with iPad shot + reflection */
+.rhero{padding:56px 0 0}
+.rhero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:center}
+.rhero-txt{padding-bottom:56px}
+.rhero-shot{margin:0 0 calc(340px * 1235 / 900 * .3);padding:24px 0 0}
+.rhero-shot img{display:block;width:100%;height:auto;box-shadow:0 0 0 1px rgba(255,255,255,.14);-webkit-box-reflect:below 6px linear-gradient(transparent 72%,rgba(255,255,255,.2))}
+@media (max-width:760px){.rhero .wrap{grid-template-columns:1fr;gap:8px}.rhero-txt{padding-bottom:16px}.rhero-shot{max-width:300px;margin:0 auto 120px}}
+/* App Store badge */
+.asb{display:inline-block;padding:0;line-height:0}
+.asb img{height:50px;width:auto;display:block}
+.item .btns .asb{margin-right:4px}
+.status-asb{justify-self:end}
+@media (max-width:760px){.status-asb{grid-column:2;justify-self:start;margin-top:8px}}
