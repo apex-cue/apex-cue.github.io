@@ -267,3 +267,31 @@ a.ig img{display:block;flex:none}
 }
 .top nav{align-items:center}
 .top nav a.top-ig{display:inline-flex;align-items:center;gap:15px;padding:4px 10px}
+
+/* shop */
+.shop-hero{background:#0B0B0C;color:#fff;padding:56px 0 48px}
+.shop-hero h1{font-size:clamp(32px,5vw,52px);margin:0 0 8px;line-height:1.2}
+.shop-hero p{margin:0;color:#B9BEC5}
+.shop{padding:48px 0 72px}
+.shop h2{font-size:22px;font-weight:900;margin:40px 0 16px}
+.shop h2:first-child{margin-top:0}
+.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;list-style:none;margin:0;padding:0}
+.item{background:#fff;border-radius:20px;padding:24px;display:grid;grid-template-columns:72px 1fr;gap:6px 18px;align-content:start}
+.item img{width:72px;height:72px;border-radius:16px;grid-row:span 2}
+.item h3{margin:0;font-size:20px;line-height:1.35}
+.item .what{margin:0;color:var(--ink-2);font-size:14px}
+.item .price{grid-column:1/-1;margin:14px 0 0;font-size:26px;font-weight:900;line-height:1.2}
+.item .price small{font-size:14px;font-weight:400;color:var(--ink-2);margin-left:6px}
+.item .note{grid-column:1/-1;margin:2px 0 0;font-size:14px;color:var(--ink-2)}
+.item .btns{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.item .pill{height:42px;padding:0 20px;font-size:15px}
+.pill.dark{background:var(--ink);color:#fff}
+.pill.dark:hover{background:#000}
+.pill.ghost{border:2px solid var(--ink);color:var(--ink)}
+.pill.off{background:#E3E5E8;color:#6A7078;pointer-events:none}
+.shop .legal{margin-top:40px;font-size:14px;color:var(--ink-2)}
+@media (max-width:760px){.items{grid-template-columns:1fr}}
+.store-h{font-family:"ArchivoWide",var(--jp);font-weight:900;letter-spacing:-.01em}
+html{scroll-behavior:smooth}
+.product-h{font-family:"ArchivoWide",var(--jp);font-weight:900;letter-spacing:-.01em}
+.top nav .store{color:#fff;font-weight:700;letter-spacing:.04em}
