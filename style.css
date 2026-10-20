@@ -316,3 +316,10 @@ html{scroll-behavior:smooth}
 .item .btns .asb{margin-right:4px}
 .status-asb{justify-self:end}
 @media (max-width:760px){.status-asb{grid-column:2;justify-self:start;margin-top:8px}}
+.app .asb img,.item .asb img{width:auto;height:50px;border-radius:0}
+a.status{text-decoration:none}
+a.status.live:hover{filter:brightness(1.08);text-decoration:underline}
+/* soften seam between iPad shot and its reflection */
+.rhero-shot{position:relative}
+.rhero-shot img{box-shadow:none;-webkit-box-reflect:below 0 linear-gradient(transparent 70%,rgba(255,255,255,.22))}
+.rhero-shot::after{content:"";position:absolute;left:-8px;right:-8px;bottom:-32px;height:46px;background:rgba(28,30,34,.45);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);-webkit-mask-image:linear-gradient(180deg,transparent,#000 45%,#000 55%,transparent);mask-image:linear-gradient(180deg,transparent,#000 45%,#000 55%,transparent);pointer-events:none}
