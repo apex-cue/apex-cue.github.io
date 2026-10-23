@@ -18,7 +18,7 @@
 <link rel="alternate" hreflang="en" href="en/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=16">
+<link rel="stylesheet" href="../style.css?v=22">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -26,6 +26,7 @@
   <a class="brand" href="./"><img src="icon.png" alt="">PonDashi Player Audio PRO</a>
   <nav aria-label="サイト">
     <a class="store" href="../store.html">STORE</a>
+    <a href="privacy.html">プライバシー</a>
     <a class="lang" href="en/" hreflang="en" lang="en">English</a>
   </nav>
 </div></header>
@@ -36,18 +37,17 @@
     <h1>PonDashi Player Audio PRO</h1>
     <p class="lead">現場のテスターと作り込んだ、プロ仕様の「ポン出し」ソフトウェア。Core Audio にネイティブ対応し、内部の音声処理まで突き詰めて高音質を実現。OUT バスのルーティング、iPhone・iPad のリモコンアプリからの操作にも対応しました。LTC の入力・出力は、オプション（別売）で追加できます。<br>現場で出た「これが欲しい」を、ひとつずつ形にしています。</p>
     <div class="actions">
-      <span class="badge"><span>発売準備中</span></span>
-      <span class="badge"><span>PRO 本体<small>1 台 2,000 円（税込）</small></span></span>
-      <span class="req">macOS 13 以降・Apple Silicon</span>
+      <a class="badge" href="#buy"><span>公式サイトで購入<small>1 台 2,000 円（税込）</small></span></a>
+      <span class="req">macOS 13 以降・Apple Silicon（M1 以降）・メモリ 8 GB 以上</span>
     </div>
   </div>
-  <div class="wrap"><figure class="hero-shot"><img src="img/playlist.png" width="2000" height="1206" alt="PonDashi Player Audio PRO のプレイリスト画面。上段にタイムコードのパネル、右に曲フェーダーとマスターのメーター（PEAK・TP）"></figure></div>
+  <div class="wrap"><figure class="hero-shot"><img src="img/cover-110.jpg" width="2000" height="1125" alt="PonDashi Player Audio PRO のプレイリスト画面。上段にタイムコードのパネル、右に曲フェーダーとマスターのメーター（PEAK・TP）"></figure></div>
 </div>
 
 <section id="features">
   <div class="wrap">
     <h2>PRO で加わる機能</h2>
-    <p class="sub measure"><a href="../pondashi-audio/">PonDashi Player Audio</a> の機能はすべてそのまま使えます。</p>
+    <p class="sub measure"><a href="../pondashi-audio/">PonDashi Player Audio</a> の機能（プレイリスト、パッド、タイマー、EQ、AGC・A.FDR、MIDI、曲フェーダー、リモコンなど）は、すべてそのまま使えます。</p>
     <dl class="flow">
       <dt>出す<span>OUT バス</span></dt>
       <dd><figure class="shot"><img src="img/routing.png" width="1932" height="828" loading="lazy" alt="出力ルーティングの画面。本線は ch 1-2、HP モニターは ch 3-4 に L・R を割り当て"><figcaption>本線と HP モニターそれぞれ、ch のマスをクリックして L・R を割り当てます。</figcaption></figure><ul>
@@ -75,11 +75,17 @@
       </ul></dd>
       <dt>受ける・送る<span>LTC（オプション 1,000 円・税込）</span></dt>
       <dd><figure class="shot narrow"><img src="img/ltc.png" width="886" height="234" loading="lazy" alt="タイムコードのパネル。29.97ND・29.97DF・30 NDF の切替、LTC LOCK、タイムコード、LTC GEN と LTC RCV"><figcaption>タイムコードのパネル。レート、ロック、GEN・RCV の状態を一目で確認できます。</figcaption></figure><ul>
-        <li><h3>LTC GEN・LTC RCV</h3><p>LTC GEN は鳴っている曲の TC を出し、プリロールで相手の機器が追いつく時間を作れます。LTC RCV は受けた TC で曲を鳴らし、鳴り始めた曲は LTC が途切れても最後まで自走します。レートは 29.97 ND／DF・30 NDF。</p></li>
+        <li><h3>LTC GEN・LTC RCV</h3><p>LTC GEN は鳴っている曲の TC を出し、プリロールで相手の機器が追いつく時間を作れます。LTC RCV は受けた TC で曲を鳴らし、鳴り始めた曲は LTC が途切れても最後まで自走します。TC モードでは、曲ごとにタイムコードを決めて鳴らします（チェイス）。レートは 29.97 DF／29.97 ND／30 NDF。</p></li>
       </ul></dd>
-      <dt>操作する<span>リモコン</span></dt>
-      <dd><div class="shot-pair"><figure class="shot"><img src="img/remote-iphone.png" width="1320" height="2868" loading="lazy" alt="iPhone の PonDashi Remote。プレイリストと GO、曲フェーダー"></figure><figure class="shot"><img src="img/remote-ipad.png" width="1640" height="2360" loading="lazy" alt="iPad の PonDashi Remote。P1 のパッド 12 個と曲フェーダー"></figure></div><ul>
-        <li><h3>PonDashi Remote</h3><p>無償の <a href="../pondashi-remote/">PonDashi Remote</a>（iPhone・iPad）で、パッド、プレイリストの GO、曲フェーダーを手元で操作。ブラウザからも使えます。</p></li>
+      <dt>まとめる<span>グループ・キューシート</span></dt>
+      <dd><figure class="shot"><img src="img/group.jpg" width="2000" height="406" loading="lazy" alt="プレイリストの「オープニング」と「転換BGM」がグループ 1 として紫の枠で囲まれ、リンクのマークと、自動で入った時刻が紫の斜めの文字で表示されている"><figcaption>グループは紫の枠で表示。前の曲の終わりから自動で入った時刻は、紫の斜めの文字で出ます。</figcaption></figure>
+      <figure class="shot"><img src="img/cuesheet.jpg" width="1600" height="905" loading="lazy" alt="書き出したキューシート（PDF）の表。No・タイトル・ファイル・IN・OUT・コメントの列。グループ 1 は枠で囲まれ、開始 18:35:00 が入っている"><figcaption>書き出したキューシート。<a href="img/cuesheet-sample.pdf">見本の PDF（A4 縦）</a></figcaption></figure><ul>
+        <li><h3>グループとリンク</h3><p>先頭の曲に時刻（TC）を入れると、残りの曲は前の曲の終わりから自動で入ります。IN／OUT、フェード、クロスフェード、入り方（GO・落ち切り・被せ）を変えると、自動で計算し直します。時刻モードでも TC モードでも使えます。</p></li>
+        <li><h3>キューシートの書き出し（PDF）</h3><p>プレイリストを A4 縦の表にして書き出します。列は No・タイトル（ファイル）・IN・OUT・コメント（手書き用の空欄）。グループは枠で囲み、開始時刻を入れます。</p></li>
+      </ul></dd>
+      <dt>見る<span>表示</span></dt>
+      <dd><figure class="shot"><img src="img/light.jpg" width="2000" height="1125" loading="lazy" alt="ライト表示の画面。明るい背景で、プレイリストとメーター、ピンクの波形"><figcaption>ライト表示。明るい場所でも見やすい画面です。</figcaption></figure><ul>
+        <li><h3>ライト表示</h3><p>ダークとライトを切り替えられます。</p></li>
       </ul></dd>
     </dl>
   </div>
@@ -93,11 +99,14 @@
       <thead><tr><th scope="col">違い</th><th scope="col">PonDashi Player Audio</th><th scope="col">PRO</th></tr></thead>
       <tbody>
         <tr><th scope="row">音のエンジン</th><td>Web Audio</td><td>Core Audio にじかにつながるネイティブのエンジン（音質の向上）</td></tr>
-        <tr><th scope="row">OUT バス</th><td>―</td><td>オーディオインターフェイスの仕様に沿って自由にアサイン</td></tr>
+        <tr><th scope="row">OUT バス</th><td>ch 1-2 だけ</td><td>オーディオインターフェイスの仕様に沿って自由にアサイン</td></tr>
         <tr><th scope="row">機器の占有</th><td>なし</td><td>ほかのアプリの音を混ぜずに、オーディオインターフェイスを占有できる</td></tr>
         <tr><th scope="row">メーター</th><td>ピーク</td><td>ピーク＋トゥルーピーク（サンプルの間のピークも見える）</td></tr>
         <tr><th scope="row">EQ を切ったとき</th><td>EQ を通る</td><td>完全に素通し（ビットが変わらない）</td></tr>
-        <tr><th scope="row">リモコン</th><td>PonDashi Remote（パッド＋プレイリストの GO）、ブラウザ（パッドだけ）。App Store 版以外は対応</td><td>iPhone・iPad のアプリ（パッド＋プレイリストの GO）、無償。ブラウザでも使える</td></tr>
+                <tr><th scope="row">サンプルレート</th><td>48 kHz 固定</td><td>出力の機器に合わせる</td></tr>
+        <tr><th scope="row">グループとリンク</th><td>―</td><td>あり</td></tr>
+        <tr><th scope="row">キューシートの書き出し（PDF）</th><td>―</td><td>あり</td></tr>
+        <tr><th scope="row">表示</th><td>ダーク</td><td>ダーク・ライト</td></tr>
         <tr><th scope="row">タイムコード</th><td>なし</td><td>LTC の入出力（オプション 1,000 円・税込）</td></tr>
       </tbody>
     </table>
@@ -105,23 +114,44 @@
   </div>
 </section>
 
-<section id="price">
+<section id="buy">
   <div class="wrap">
-    <h2>値段</h2>
+    <h2>値段・購入</h2>
     <table class="spec">
       <tr><th scope="row">PRO 本体</th><td>1 台 2,000 円（税込）</td></tr>
       <tr><th scope="row">LTC オプション</th><td>1 台 1,000 円（税込）。PRO 本体に追加</td></tr>
       <tr><th scope="row">ノーマル版からのアップグレード</th><td>1 台 1,000 円（税込）</td></tr>
     </table>
     <div class="measure">
-      <p>アップグレードの対象は、直販版（ライセンスキー PDA-… をお持ちの方）です。App Store 版は対象外です。</p>
-      <p>発売時には、LTC を含むすべての機能を 14 日間試せる体験版を用意します。</p>
+      <p>購入の前に、体験版（14 日間・LTC を含むすべての機能）で、お使いの Mac で動くかを確かめてください。動かないときは、サポート（<a href="mailto:info.apexcue@gmail.com">info.apexcue@gmail.com</a>）までご連絡ください。</p>
+      <p><a class="contact" href="https://buy.stripe.com/00w3cw5YGes4b8g3PRbAs01">公式サイトで購入</a>　1 台 2,000 円（税込）。購入画面で台数（1〜5 台）を選べます。支払いのあと、ライセンスキー（PDP-…）がすぐに表示されます。</p>
+      <p><a href="https://github.com/apex-cue/pondashi-audio-pro-releases/releases/latest/download/PonDashi-Player-Audio-PRO.dmg">アプリをダウンロード（1.1.0・DMG・約 137 MB）</a>　初めて起動すると、体験版を始められます。14 日間、LTC を含むすべての機能を使えます。続けて使うときは、ライセンスキーを入力します。</p>
+      <p><a href="https://pondashi-pro-license.info-apexcue.workers.dev/ltc">LTC オプションを購入</a>（PRO のキーをお持ちの方）　<a href="https://pondashi-pro-license.info-apexcue.workers.dev/upgrade">ノーマル版からアップグレード</a>（直販版のキー PDA-… をお持ちの方。App Store 版は対象外です）<br>どちらも、アプリの「ライセンス…」からも購入できます。</p>
+      <p><a href="../tokushoho.html">特定商取引法に基づく表記</a>　<a href="privacy.html">プライバシーポリシー</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="spec">
+  <div class="wrap">
+    <h2>動かすのに必要なもの</h2>
+    <table class="spec">
+      <tr><th scope="row">Mac</th><td>Apple Silicon（M1 以降）。Intel の Mac では動きません</td></tr>
+      <tr><th scope="row">OS</th><td>macOS 13 Ventura 以降</td></tr>
+      <tr><th scope="row">メモリ</th><td>8 GB 以上（16 GB 以上をおすすめします）</td></tr>
+      <tr><th scope="row">画面</th><td>横 1920 ピクセル以上をおすすめします</td></tr>
+      <tr><th scope="row">LTC を使うとき</th><td>LTC を出す・受ける ch のあるオーディオインターフェイス</td></tr>
+      <tr><th scope="row">バージョン</th><td>1.1.0</td></tr>
+    </table>
+    <div class="measure">
+      <p>素材は、読み込むときに全部メモリに入れます。ステレオ 48 kHz で 1 分あたり約 23 MB、EQ を掛けた素材はその約 2 倍です。長い素材を多く入れるショーでは、メモリに余裕のある Mac をお使いください。</p>
+      <p>本番の出力は、ケーブルでつないだ機器をおすすめします。ワイヤレスのイヤホンやスピーカーは、遅れや途切れが出やすくなります。</p>
     </div>
   </div>
 </section>
 </main>
 <footer class="foot"><div class="wrap">
-  <nav aria-label="フッター"><a href="../">ApexCue のアプリ一覧</a><a href="mailto:info.apexcue@gmail.com">お問い合わせ</a><a href="../tokushoho.html">特定商取引法に基づく表記</a><a class="ig" href="https://www.instagram.com/apex_cue/" rel="me noopener" target="_blank"><img src="../instagram-glyph.png" width="29" height="29" alt="">Instagram</a></nav>
+  <nav aria-label="フッター"><a href="../">ApexCue のアプリ一覧</a><a href="mailto:info.apexcue@gmail.com">お問い合わせ</a><a href="../tokushoho.html">特定商取引法に基づく表記</a><a href="privacy.html">プライバシーポリシー</a><a class="ig" href="https://www.instagram.com/apex_cue/" rel="me noopener" target="_blank"><img src="../instagram-glyph.png" width="29" height="29" alt="">Instagram</a></nav>
   <span class="copy">© 2026 KENJI morimoto</span>
 </div></footer>
 </body>

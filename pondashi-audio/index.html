@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://apex-cue.github.io/og.png">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "PonDashi Player Audio", "operatingSystem": "macOS 13 or later (Apple silicon)", "applicationCategory": "MultimediaApplication", "softwareVersion": "1.0.2", "url": "https://apex-cue.github.io/pondashi-audio/", "image": "https://apex-cue.github.io/pondashi-audio/icon.png", "offers": {"@type": "Offer", "price": "1000", "priceCurrency": "JPY", "url": "https://apex-cue.github.io/pondashi-audio/#buy"}, "author": {"@type": "Person", "name": "KENJI morimoto"}, "publisher": {"@type": "Organization", "name": "ApexCue", "url": "https://apex-cue.github.io/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "PonDashi Player Audio", "operatingSystem": "macOS 13 or later (Apple silicon)", "applicationCategory": "MultimediaApplication", "softwareVersion": "1.1.0", "url": "https://apex-cue.github.io/pondashi-audio/", "image": "https://apex-cue.github.io/pondashi-audio/icon.png", "offers": {"@type": "Offer", "price": "1000", "priceCurrency": "JPY", "url": "https://apex-cue.github.io/pondashi-audio/#buy"}, "author": {"@type": "Person", "name": "KENJI morimoto"}, "publisher": {"@type": "Organization", "name": "ApexCue", "url": "https://apex-cue.github.io/"}}</script>
 <title>PonDashi Player Audio — Mac 用ポン出しソフト（音出しアプリ）</title>
 <meta name="description" content="放送・イベント・舞台の音出し（ポン出し）に使う Mac 用ソフト。プレイリストとパッド、フェード、タイマー、ピーク合わせ、2 系統出力。1 台 1,000 円（税込）。">
 <link rel="icon" href="favicon.png">
@@ -46,7 +46,7 @@
       <span class="req">macOS 13 以降・Apple Silicon（M1 以降）</span>
     </div>
   </div>
-  <div class="wrap"><figure class="hero-shot"><img src="img/playlist.png" width="2000" height="1281" alt="PonDashi Player Audio のプレイリスト画面。上段にモード切替・CONFIG・AUTO PLAY・現在時刻・送出、中央に素材の一覧、下に選んだ素材の波形とフェード"></figure></div>
+  <div class="wrap"><figure class="hero-shot"><img src="img/playlist-11.jpg" width="2000" height="1222" alt="PonDashi Player Audio のプレイリスト画面。上段にモード切替・CONFIG・AUTO PLAY・現在時刻・送出、中央に素材の一覧、下に選んだ素材の波形とフェード"></figure></div>
 </div>
 
 <section id="features">
@@ -55,7 +55,7 @@
     <p class="sub measure">ポン出しとは、本番中に効果音や BGM を、きっかけ（キュー）に合わせて出すことです。PonDashi Player Audio は、そのための Mac 用ソフトです。機能は、仕込み、本番、つなぎ、音づくり、出力と、現場で必要になる順に並べました。</p>
     <dl class="flow">
       <dt>鳴らす<span>本番中</span></dt>
-      <dd><figure class="shot"><img src="img/pads.png" width="2000" height="1281" loading="lazy" alt="パッドモード。1 番のパッドが再生中で、残り時間と波形を表示"><figcaption>再生中のパッドは残り時間と進み具合を表示。下の波形には A.FDR の動きも出ます。</figcaption></figure><ul>
+      <dd><figure class="shot"><img src="img/pads-11.jpg" width="2000" height="750" loading="lazy" alt="パッドモード。1 番のパッドが再生中で、残り時間と波形を表示"><figcaption>再生中のパッドは、残り時間と進み具合を表示します。</figcaption></figure><ul>
         <li><h3>プレイリスト</h3><p>3 ページ。<kbd>Space</kbd> 再生／停止（止めるときはフェードアウトし、次の曲を選んでおく）、<kbd>↑</kbd><kbd>↓</kbd> 選択、<kbd>Enter</kbd> 選択した曲を再生、<kbd>Esc</kbd> 全停止。</p></li>
         <li><h3>パッド</h3>
           <p>3 ページ × 12 パッド。鳴り方は TRIGGER（押したパッドだけ鳴らし、他はクロスフェード）、POLY（重ねて鳴らす）、ONE-SHOT（最後まで鳴らし切り、誤操作で止まらない）。MANUAL にすると、パッドごとに鳴り方を選べます。パッドを鳴らすショートカットは、テンキーなど好きなキーに変えられます。パッドを右クリックして、プレイリストへコピーできます。</p></li>
@@ -66,13 +66,14 @@
       <dd><figure class="shot narrow"><img src="img/timer.png" width="688" height="572" loading="lazy" alt="時刻になったときの入り方の設定。GO・落ち切りで GO・被せ（前の曲が何 % まで下がった所か）と、前の曲を下げる時間"><figcaption>時刻になったときの入り方。前の曲の下げ方まで決めておけます。</figcaption></figure><ul>
         <li><h3>クロスフェード</h3><p>全体の ON/OFF と秒数。曲ごとに上書きもできます。</p></li>
         <li><h3>AUTO PLAY</h3><p>曲が終わると、同じページの次の曲を隙間なく続けて再生。最後の曲で止まります。</p></li>
-        <li><h3>タイマー</h3><p>時刻ちょうどに再生。「前の曲を下げ切ってから」「前の曲が ○% まで下がった所で被せる」も指定できます。出力の遅れ（Bluetooth を含む）を差し引き、聞こえる時刻で合わせます。</p></li>
+        <li><h3>タイマー</h3><p>時刻ちょうどに再生。「前の曲を下げ切ってから」「前の曲が ○% まで下がった所で被せる」も指定できます。出力の遅れ（ワイヤレスの機器を含む）を差し引き、聞こえる時刻で合わせます。</p></li>
       </ul></dd>
 
       <dt>仕込む<span>本番前</span></dt>
       <dd><figure class="shot"><img src="img/fade.png" width="1178" height="292" loading="lazy" alt="波形の上のフェード表示。IN と OUT の旗と、頭とお尻のフェードの線"><figcaption>IN/OUT の旗と、頭・お尻のフェードの線。波形の上で直接ドラッグして変えます。</figcaption></figure><ul>
         <li><h3>波形編集</h3><p>ドラッグで IN/OUT、ループ、拡大、再生位置を追いかけるスクロール。IN/OUT はゼロクロスに自動で吸着し、プツ音を防ぎます。鳴らしながら編集できます。</p></li>
         <li><h3>フェード</h3><p>波形の上でドラッグして長さと形を自由に。リニア、イコールパワー、S カーブなどのプリセットも。</p></li>
+        <li><h3>ページを空に</h3><p>表示しているページを、まとめて削除。<kbd>⌘</kbd><kbd>Z</kbd> で元に戻せます。</p></li>
         <li><h3>ショーの保存</h3><p>ページ単位の書き出し・読み込み。前回のショーを起動時に開きます。</p></li>
       </ul></dd>
 
@@ -87,6 +88,12 @@
       <dd><figure class="shot narrow"><img src="img/output.png" width="1180" height="795" loading="lazy" alt="出力設定の画面。本線（送出 ON）と HP モニター（送出 OFF）の出力デバイスを選ぶ"><figcaption>出力設定。本線と HP モニターにそれぞれ別のデバイスを選べます。</figcaption></figure><ul>
         <li><h3>2 系統出力</h3><p>本線と HP（モニター）を別のオーディオデバイスへ。送出 ON/OFF で切り替えます。</p></li>
       </ul></dd>
+      <dt>操作する<span>MIDI・リモコン</span></dt>
+      <dd><ul>
+        <li><h3>曲フェーダー</h3><p>マスターの左に、いま鳴っている曲のフェーダーとメーターを表示。鳴る曲が替わると、自動で切り替わります。</p></li>
+        <li><h3>MIDI</h3><p>コントローラーのボタンやつまみを「ラーン」で割り当て。GO・停止・前／次の曲・全部止める・パッド・曲フェーダー・マスター音量などを、手元で操作できます。つまみと画面のフェーダーの位置が離れているときは、つまみが今の位置を通るまで音量は変わりません（ピックアップ）。</p></li>
+        <li><h3>リモコン</h3><p>iPhone・iPad の <a href="../pondashi-remote/">PonDashi Remote</a>（無料）か、ブラウザから操作。パッド、プレイリストの GO、全部止める、曲の音量。</p></li>
+      </ul></dd>
     </dl>
   </div>
 </section>
@@ -96,7 +103,7 @@
     <h2>購入方法</h2>
     <p>公式サイトで購入できます。1 ライセンス（Mac 1 台）1,000 円（税込）。購入画面で台数（1〜5 台）を選べます。支払い後、ライセンスキーがすぐに表示されます。</p>
     <p><a class="contact" href="https://buy.stripe.com/9B63cwgDk6ZC0tCbijbAs00">公式サイトで購入</a></p>
-    <p><a href="https://github.com/apex-cue/pondashi-audio-releases/releases/latest/download/PonDashi-Player-Audio.dmg">アプリをダウンロード（1.0.2・DMG・約 135 MB）</a>　macOS 13 以降・Apple Silicon。起動後にライセンスキーを入力します。過去のバージョンは<a href="download.html">ダウンロード</a>のページにあります。</p>
+    <p><a href="https://github.com/apex-cue/pondashi-audio-releases/releases/latest/download/PonDashi-Player-Audio.dmg">アプリをダウンロード（1.1.0・DMG・約 136 MB）</a>　macOS 13 以降・Apple Silicon。起動後にライセンスキーを入力します。過去のバージョンは<a href="download.html">ダウンロード</a>のページにあります。</p>
     <p>App Store 版・直販版・PRO の違いは、<a href="../compare.html">比較表</a>をご覧ください。</p>
     <p><a href="../tokushoho.html">特定商取引法に基づく表記</a>　<a href="privacy.html">プライバシーポリシー</a></p>
   </div></div>
@@ -113,7 +120,7 @@
       <tr><th scope="row">読める音声ファイル</th><td>WAV、AIFF、CAF、MP3、M4A（AAC）、FLAC、Ogg など。App Store 版は Apple ロスレス（ALAC）を読めません。</td></tr>
       <tr><th scope="row">出力</th><td>Mac で使えるオーディオデバイス（48 kHz、チャンネル 1-2）。本線と HP の 2 系統。</td></tr>
       <tr><th scope="row">データの収集</th><td>しません（公式サイト版は、ライセンスの登録・解除のときだけ台数管理のための情報を送ります）。<a href="privacy.html">プライバシーポリシー</a></td></tr>
-      <tr><th scope="row">バージョン</th><td>1.0.2</td></tr>
+      <tr><th scope="row">バージョン</th><td>1.1.0</td></tr>
     </table>
     <div class="notes measure">
       <h3>ご使用前の注意</h3>
